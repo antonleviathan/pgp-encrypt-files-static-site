@@ -1,9 +1,9 @@
 # PGP Encrypt Files Static Site
-This is a simple reference implementation for uploading, encrypting and downloading files, fully on the client side. The purpose is to allow safe transfer of information, especially in contexts of businesses having external parties send sensitive information to them. This project can be configured to use your PGP keys, and once the files are encrypted they can be sent safely almost virtually any channel.
+This is a simple reference implementation for uploading, encrypting and downloading files, fully on the client side. The purpose is to allow safe transfer of information, especially in contexts of businesses having external parties send sensitive information to them. This project can be configured to use your PGP keys, and once the files are encrypted they can be sent safely over virtually any channel.
 
 The library used for pgp is [openpgp.js](https://github.com/openpgpjs/openpgpjs/), intentionally left in its readable, rather than compressed and uglified format to make verification easier. Similarly, the whole project is written in plain JavaScript, HTML and CSS to make it easier to audit.
 
-You can also easily modify the content of the pages and add your own styling in the `style/main.css` file.
+You can also modify the content of the pages and add your own styling in the `style/main.css` file.
 
 ## Configuration
 To start using this project, fork it, and modify the "config.js" file found in the root of the project.
