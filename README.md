@@ -37,8 +37,3 @@ const index = [
 
 ## Deployment
 Once you have configured the project and added your styling, as well as modified the content to your liking, you can simply run the `build.js` script which will generate all your files and put them in the `build_` directory. The build directory is a self contained bundle of code you can easily deploy using any http hosting service, for example GitHub Pages or Netlify.
-
-## TODO
-- [ ] Replace current keys with placholders
-- [ ] Clean up README.md
-- [ ] Clean up copy in src/ files
