@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Encrypt Sensitive Documents</title>
+  <link rel="stylesheet" type="text/css" href="./main.css" media="screen" />
+  <script src="./openpgp.js"></script>
+  <script src="./methods.js"></script>
+</head>
+
+<body>
+  <div id="main-container">
+    <h1>Encrypt Sensitive Documents</h1>
+
+    <p class="instructions">
+      Please use this page to encrypt sensitive documents. Only the party controlling the private keys will be able to view the contents of the encrypted file(s).
+    </p>
+
+
+    <h3>Step 1.</h3>
+    <p>Put your files into a folder and compress the folder</p>
+    <p class="small-text">To create a ZIP file from a folder:</p>
+    <p class="small-text">On Windows, right click the folder and select "Send to" › "Compressed (zipped folder)".</p>
+    <p class="small-text">On Mac, right click the folder and select "Compress [Folder Name]".</p>
+
+    <h3>Step 2.</h3>
+    <p class="instructions">
+      Choose your compressed folder by clicking "Choose File" and selecting it.
+    </p>
+    <form>
+      <input type="file" id="file" name="filename">
+    </form>
+
+    <h3>Step 3.</h3>
+    <p class="instructions">
+      Click "Download" to download the encrypted file.
+    </p>
+    <form>
+      <button type="button" onClick="return encryptToGroupAndDownload()">Download</button>
+    </form>
+
+    <h3>Step 4.</h3>
+    <p class="instructions">
+      Email the encrypted file to the destination. You can recognize it by looking for the name of the original file/directory you encrypted, except it will have a ".gpg" extension.
+    </p>
+
+    <br />
+
+  </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GPG Encrypt File to Individual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="style/main.css" media="screen" />
+  <script src="deps/openpgp.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>
+      PGP Encrypt Files
+    </h1>
+    <hr>
+
+    <h4>Upload File</h4>
+    <form>
+      <input type="file" id="file" name="filename">
+    </form>
+
+    <h4>Upload Public Key File</h4>
+    <form>
+      <input type="file" id="pubKey" name="pubKey">
+    </form>
+    <br />
+
+    <form>
+      <button type="button" onClick="return encryptAndDownload()">Download</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
+
+<script>
+
+</script>
+<script src="deps/methods.js"></script>

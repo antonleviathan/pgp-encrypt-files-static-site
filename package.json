@@ -1,0 +1,8 @@
+{
+  "name": "pgp-encrypt-files-static-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:antonleviathan/pgp-encrypt-files-static-site.git",
+  "author": "Anton Livaja <anton@livaja.me>",
+  "license": "MIT"
+}

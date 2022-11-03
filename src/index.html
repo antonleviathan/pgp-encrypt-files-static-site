@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PGP Encrypt Files</title>
+  <script src="lib/openpgp.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>
+      PGP Encrypt Files
+    </h1>
+    <hr>
+
+    <h3>Step 1</h3>
+    <p>Put files into a directory/folder and compress it</p>
+
+    <h3>Step 2</h3>
+    <p>Upload the file by clicking "Browse..." and selecting it</p>
+
+    <h3>Step 3</h3>
+    <p>Click "Download" to encrypt and download the file</p>
+
+    <form>
+      <input type="file" id="file" name="filename">
+    </form>
+
+    <br />
+
+    <form>
+      <button type="button" onClick="return encryptAndDownload()">Download</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
